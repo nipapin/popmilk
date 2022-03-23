@@ -4,7 +4,7 @@
     overflow: hidden;
     position: absolute;
     z-index: 10000;
-    background: #1f1a24;
+    background: linear-gradient(180deg, #1f1a24, #241a1f);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@
 .app-version {
     position: absolute;
     bottom: 0;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
     font-size: 8px;
     font-weight: 100;
 }
@@ -38,6 +38,8 @@ label {
     opacity: 0;
     animation: reveal 0.67s cubic-bezier(0, 0, 0, 1) forwards;
     animation-delay: 1s;
+    -webkit-animation: reveal 0.67s cubic-bezier(0, 0, 0, 1) forwards;
+    -webkit-animation-delay: 1s;
 }
 
 .form > * {
@@ -105,5 +107,16 @@ label {
     100% {
         transform: translate(0, 0);
         opacity: 1;
+    }
+}
+
+@-webkit-keyframes reveal {
+    0% {
+        -webkit-transform: translate(0, 50%);
+        -webkit-opacity: 0;
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        -webkit-opacity: 1;
     }
 }
