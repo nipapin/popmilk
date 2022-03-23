@@ -36,9 +36,9 @@ label {
     align-items: center;
     justify-content: center;
     opacity: 0;
-    animation: reveal 0.67s cubic-bezier(0, 0, 0, 1) forwards;
+    animation: reveal 0.67s ease-in-out forwards;
     animation-delay: 1s;
-    -webkit-animation: reveal 0.67s cubic-bezier(0, 0, 0, 1) forwards;
+    -webkit-animation: reveal 0.67s ease-in-out forwards;
     -webkit-animation-delay: 1s;
 }
 
