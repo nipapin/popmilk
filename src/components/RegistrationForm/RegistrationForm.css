@@ -8,7 +8,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     color: white;
+}
+.app-version {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 16px;
+    font-size: 8px;
+    font-weight: 100;
 }
 
 label {
@@ -27,7 +35,9 @@ label {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 0;
     animation: reveal 0.67s cubic-bezier(0, 0, 0, 1) forwards;
+    animation-delay: 1s;
 }
 
 .form > * {

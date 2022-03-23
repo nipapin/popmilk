@@ -16,6 +16,7 @@ function RegistrationForm({ isLogged }) {
                     Войти
                 </button>
             </div>
+            <p className="app-version">1 . 0 . 0</p>
         </div>
     );
 }
