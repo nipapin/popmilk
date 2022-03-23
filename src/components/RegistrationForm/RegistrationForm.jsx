@@ -1,10 +1,7 @@
 import "./RegistrationForm.css";
 
-function RegistrationForm({isLogged}) {
-
-    function submitForm(){
-
-    }
+function RegistrationForm({ isLogged }) {
+    function submitForm() {}
 
     return (
         <div className="registration">

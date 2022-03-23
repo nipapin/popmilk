@@ -1,7 +1,7 @@
 .registration {
     width: 100vw;
     height: 100vh;
-    overflow: none;
+    overflow: hidden;
     position: absolute;
     z-index: 10000;
     background: #1f1a24;
@@ -83,7 +83,7 @@ label {
     transition: 0.67s ease-in-out;
 }
 
-.submit-button:hover{
+.submit-button:hover {
     background-color: #bba6fc;
 }
 
